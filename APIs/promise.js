@@ -62,3 +62,9 @@ function postItemsAxios () {
 function deletItemAxios (text) {
     axios.delete(`https://northwind.vercel.app/api/categories/${text}`)
 }
+
+
+async function deleteI(){
+    for (let i = 1; i<10;i++){
+  await  postItemsAxios(i);
+    }}
